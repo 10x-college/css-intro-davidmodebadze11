@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "My Font";
+}
+
+@font-face {
+  font-family: "My Font";
+  src: url(bpg_nino_mtavruli_bold.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4a148c;
+  background: #f3e5f5;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url("Rectangle\ 7.svg");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin: 60px 0 40px;
+  font-weight: 700;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.blog-card {
+  background: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  height: 220px;
+  width: 100%;
+}
+
+.card-content {
+  padding: 25px;
+}
+
+.card-meta {
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 12px;
+}
+
+.blog-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  color: #1a1a1a;
+}
+
+.blog-card p {
+  font-size: 14px;
+  color: #666;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+:root {
+  --bg-dark: #2a2a2a;
+  --bg-black: #000000;
+  --text-white: #ffffff;
+  --text-gray: #b0b0b0;
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.site-footer {
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+  font-family: var(--font-family);
+  padding-top: 60px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px 60px 40px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 120px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  max-width: 350px;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.footer-text {
+  color: var(--text-gray);
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.contact-list,
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-list li {
+  color: var(--text-gray);
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.footer-links li {
+  margin-bottom: 15px;
+}
+
+.footer-links a {
+  color: var(--text-gray);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--text-white);
+}
+
+.footer-bottom {
+  background-color: var(--bg-black);
+  padding: 25px 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer-bottom p {
+  color: var(--text-gray);
+  font-size: 13px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px 40px 20px;
+  }
+
+  .footer-column {
+    max-width: 100%;
+  }
+}
+
+:root {
+  --bg-color: #f4f4f6;
+  --logo-bg: #ede9fe;
+  --logo-text: #5850ec;
+  --nav-text: #000000;
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  background-color: var(--logo-bg);
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+.logo span {
+  color: var(--logo-text);
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: -0.5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--nav-text);
+  font-size: 18px;
+  font-weight: 700;
+  transition: opacity 0.2s ease;
+}
+
+.nav-item:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+  .navbar {
+    height: auto;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
